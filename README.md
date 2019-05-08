@@ -3,7 +3,7 @@ Goal: After seeing Google i/o 2019 where google introduces Live Transcription of
 
 Next step: Swift version of MTAudioProcessingTap
 
-[Demo](video.mp4)
+[Youtube Demo](https://youtu.be/CP9o_TVYDtQ)
 
 Some related links to the topic:
 * https://stackoverflow.com/questions/53636698/mtaudioprocessingtap-exc-bad-access-doesnt-always-fire-the-finalize-callback#53637508
