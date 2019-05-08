@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6BD9E6122823A0E004614F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD9E6022823A0E004614F2 /* AppDelegate.swift */; };
+		F6BD9E6622823A0E004614F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BD9E6422823A0E004614F2 /* Main.storyboard */; };
+		F6BD9E6822823A0E004614F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BD9E6722823A0E004614F2 /* Assets.xcassets */; };
+		F6BD9E6B22823A0E004614F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BD9E6922823A0E004614F2 /* LaunchScreen.storyboard */; };
+		F6BD9E7622823A0E004614F2 /* RealtimeCaptioningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD9E7522823A0E004614F2 /* RealtimeCaptioningTests.swift */; };
+		F6BD9E8122823A0E004614F2 /* RealtimeCaptioningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD9E8022823A0E004614F2 /* RealtimeCaptioningUITests.swift */; };
+		F6BD9E912282C16B004614F2 /* MYAudioTapProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BD9E902282C16A004614F2 /* MYAudioTapProcessor.m */; };
+		F6BD9E932282C436004614F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BD9E922282C436004614F2 /* ViewController.swift */; };
+		F6BD9E952282D941004614F2 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F6BD9E942282D8E3004614F2 /* video.mp4 */; };
+		F6BD9E972282E845004614F2 /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F6BD9E962282E845004614F2 /* video2.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6BD9E7222823A0E004614F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6BD9E5522823A0E004614F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6BD9E5C22823A0E004614F2;
+			remoteInfo = RealtimeCaptioning;
+		};
+		F6BD9E7D22823A0E004614F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6BD9E5522823A0E004614F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6BD9E5C22823A0E004614F2;
+			remoteInfo = RealtimeCaptioning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6BD9E5D22823A0E004614F2 /* RealtimeCaptioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealtimeCaptioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BD9E6022823A0E004614F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6BD9E6222823A0E004614F2 /* BackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupViewController.swift; sourceTree = "<group>"; };
+		F6BD9E6522823A0E004614F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6BD9E6722823A0E004614F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6BD9E6A22823A0E004614F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6BD9E6C22823A0E004614F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BD9E7122823A0E004614F2 /* RealtimeCaptioningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealtimeCaptioningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BD9E7522823A0E004614F2 /* RealtimeCaptioningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeCaptioningTests.swift; sourceTree = "<group>"; };
+		F6BD9E7722823A0E004614F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BD9E7C22823A0E004614F2 /* RealtimeCaptioningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealtimeCaptioningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BD9E8022823A0E004614F2 /* RealtimeCaptioningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeCaptioningUITests.swift; sourceTree = "<group>"; };
+		F6BD9E8222823A0E004614F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BD9E8E2282C16A004614F2 /* RealtimeCaptioning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealtimeCaptioning-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6BD9E8F2282C16A004614F2 /* MYAudioTapProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYAudioTapProcessor.h; sourceTree = "<group>"; };
+		F6BD9E902282C16A004614F2 /* MYAudioTapProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYAudioTapProcessor.m; sourceTree = "<group>"; };
+		F6BD9E922282C436004614F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6BD9E942282D8E3004614F2 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		F6BD9E962282E845004614F2 /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6BD9E5A22823A0E004614F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD9E6E22823A0E004614F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD9E7922823A0E004614F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6BD9E5422823A0E004614F2 = {
+			isa = PBXGroup;
+			children = (
+				F6BD9E5F22823A0E004614F2 /* RealtimeCaptioning */,
+				F6BD9E7422823A0E004614F2 /* RealtimeCaptioningTests */,
+				F6BD9E7F22823A0E004614F2 /* RealtimeCaptioningUITests */,
+				F6BD9E5E22823A0E004614F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6BD9E5E22823A0E004614F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD9E5D22823A0E004614F2 /* RealtimeCaptioning.app */,
+				F6BD9E7122823A0E004614F2 /* RealtimeCaptioningTests.xctest */,
+				F6BD9E7C22823A0E004614F2 /* RealtimeCaptioningUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6BD9E5F22823A0E004614F2 /* RealtimeCaptioning */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD9E942282D8E3004614F2 /* video.mp4 */,
+				F6BD9E962282E845004614F2 /* video2.mp4 */,
+				F6BD9E6022823A0E004614F2 /* AppDelegate.swift */,
+				F6BD9E6222823A0E004614F2 /* BackupViewController.swift */,
+				F6BD9E6422823A0E004614F2 /* Main.storyboard */,
+				F6BD9E6722823A0E004614F2 /* Assets.xcassets */,
+				F6BD9E6922823A0E004614F2 /* LaunchScreen.storyboard */,
+				F6BD9E6C22823A0E004614F2 /* Info.plist */,
+				F6BD9E8F2282C16A004614F2 /* MYAudioTapProcessor.h */,
+				F6BD9E902282C16A004614F2 /* MYAudioTapProcessor.m */,
+				F6BD9E8E2282C16A004614F2 /* RealtimeCaptioning-Bridging-Header.h */,
+				F6BD9E922282C436004614F2 /* ViewController.swift */,
+			);
+			path = RealtimeCaptioning;
+			sourceTree = "<group>";
+		};
+		F6BD9E7422823A0E004614F2 /* RealtimeCaptioningTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD9E7522823A0E004614F2 /* RealtimeCaptioningTests.swift */,
+				F6BD9E7722823A0E004614F2 /* Info.plist */,
+			);
+			path = RealtimeCaptioningTests;
+			sourceTree = "<group>";
+		};
+		F6BD9E7F22823A0E004614F2 /* RealtimeCaptioningUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6BD9E8022823A0E004614F2 /* RealtimeCaptioningUITests.swift */,
+				F6BD9E8222823A0E004614F2 /* Info.plist */,
+			);
+			path = RealtimeCaptioningUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6BD9E5C22823A0E004614F2 /* RealtimeCaptioning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6BD9E8522823A0E004614F2 /* Build configuration list for PBXNativeTarget "RealtimeCaptioning" */;
+			buildPhases = (
+				F6BD9E5922823A0E004614F2 /* Sources */,
+				F6BD9E5A22823A0E004614F2 /* Frameworks */,
+				F6BD9E5B22823A0E004614F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealtimeCaptioning;
+			productName = RealtimeCaptioning;
+			productReference = F6BD9E5D22823A0E004614F2 /* RealtimeCaptioning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6BD9E7022823A0E004614F2 /* RealtimeCaptioningTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6BD9E8822823A0E004614F2 /* Build configuration list for PBXNativeTarget "RealtimeCaptioningTests" */;
+			buildPhases = (
+				F6BD9E6D22823A0E004614F2 /* Sources */,
+				F6BD9E6E22823A0E004614F2 /* Frameworks */,
+				F6BD9E6F22823A0E004614F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6BD9E7322823A0E004614F2 /* PBXTargetDependency */,
+			);
+			name = RealtimeCaptioningTests;
+			productName = RealtimeCaptioningTests;
+			productReference = F6BD9E7122823A0E004614F2 /* RealtimeCaptioningTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6BD9E7B22823A0E004614F2 /* RealtimeCaptioningUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6BD9E8B22823A0E004614F2 /* Build configuration list for PBXNativeTarget "RealtimeCaptioningUITests" */;
+			buildPhases = (
+				F6BD9E7822823A0E004614F2 /* Sources */,
+				F6BD9E7922823A0E004614F2 /* Frameworks */,
+				F6BD9E7A22823A0E004614F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6BD9E7E22823A0E004614F2 /* PBXTargetDependency */,
+			);
+			name = RealtimeCaptioningUITests;
+			productName = RealtimeCaptioningUITests;
+			productReference = F6BD9E7C22823A0E004614F2 /* RealtimeCaptioningUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6BD9E5522823A0E004614F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "An Tran";
+				TargetAttributes = {
+					F6BD9E5C22823A0E004614F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+					F6BD9E7022823A0E004614F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F6BD9E5C22823A0E004614F2;
+					};
+					F6BD9E7B22823A0E004614F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F6BD9E5C22823A0E004614F2;
+					};
+				};
+			};
+			buildConfigurationList = F6BD9E5822823A0E004614F2 /* Build configuration list for PBXProject "RealtimeCaptioning" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6BD9E5422823A0E004614F2;
+			productRefGroup = F6BD9E5E22823A0E004614F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6BD9E5C22823A0E004614F2 /* RealtimeCaptioning */,
+				F6BD9E7022823A0E004614F2 /* RealtimeCaptioningTests */,
+				F6BD9E7B22823A0E004614F2 /* RealtimeCaptioningUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6BD9E5B22823A0E004614F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BD9E952282D941004614F2 /* video.mp4 in Resources */,
+				F6BD9E6B22823A0E004614F2 /* LaunchScreen.storyboard in Resources */,
+				F6BD9E6822823A0E004614F2 /* Assets.xcassets in Resources */,
+				F6BD9E972282E845004614F2 /* video2.mp4 in Resources */,
+				F6BD9E6622823A0E004614F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD9E6F22823A0E004614F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD9E7A22823A0E004614F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6BD9E5922823A0E004614F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BD9E932282C436004614F2 /* ViewController.swift in Sources */,
+				F6BD9E912282C16B004614F2 /* MYAudioTapProcessor.m in Sources */,
+				F6BD9E6122823A0E004614F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD9E6D22823A0E004614F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BD9E7622823A0E004614F2 /* RealtimeCaptioningTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6BD9E7822823A0E004614F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6BD9E8122823A0E004614F2 /* RealtimeCaptioningUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6BD9E7322823A0E004614F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6BD9E5C22823A0E004614F2 /* RealtimeCaptioning */;
+			targetProxy = F6BD9E7222823A0E004614F2 /* PBXContainerItemProxy */;
+		};
+		F6BD9E7E22823A0E004614F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6BD9E5C22823A0E004614F2 /* RealtimeCaptioning */;
+			targetProxy = F6BD9E7D22823A0E004614F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6BD9E6422823A0E004614F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6BD9E6522823A0E004614F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6BD9E6922823A0E004614F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6BD9E6A22823A0E004614F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6BD9E8322823A0E004614F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6BD9E8422823A0E004614F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6BD9E8622823A0E004614F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F8866H6R9;
+				INFOPLIST_FILE = RealtimeCaptioning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tba.apps.RealtimeCaptioning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RealtimeCaptioning/RealtimeCaptioning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F6BD9E8722823A0E004614F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F8866H6R9;
+				INFOPLIST_FILE = RealtimeCaptioning/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tba.apps.RealtimeCaptioning;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RealtimeCaptioning/RealtimeCaptioning-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6BD9E8922823A0E004614F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F8866H6R9;
+				INFOPLIST_FILE = RealtimeCaptioningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tba.apps.RealtimeCaptioningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealtimeCaptioning.app/RealtimeCaptioning";
+			};
+			name = Debug;
+		};
+		F6BD9E8A22823A0E004614F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F8866H6R9;
+				INFOPLIST_FILE = RealtimeCaptioningTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tba.apps.RealtimeCaptioningTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RealtimeCaptioning.app/RealtimeCaptioning";
+			};
+			name = Release;
+		};
+		F6BD9E8C22823A0E004614F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F8866H6R9;
+				INFOPLIST_FILE = RealtimeCaptioningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tba.apps.RealtimeCaptioningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealtimeCaptioning;
+			};
+			name = Debug;
+		};
+		F6BD9E8D22823A0E004614F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7F8866H6R9;
+				INFOPLIST_FILE = RealtimeCaptioningUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tba.apps.RealtimeCaptioningUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RealtimeCaptioning;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6BD9E5822823A0E004614F2 /* Build configuration list for PBXProject "RealtimeCaptioning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BD9E8322823A0E004614F2 /* Debug */,
+				F6BD9E8422823A0E004614F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6BD9E8522823A0E004614F2 /* Build configuration list for PBXNativeTarget "RealtimeCaptioning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BD9E8622823A0E004614F2 /* Debug */,
+				F6BD9E8722823A0E004614F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6BD9E8822823A0E004614F2 /* Build configuration list for PBXNativeTarget "RealtimeCaptioningTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BD9E8922823A0E004614F2 /* Debug */,
+				F6BD9E8A22823A0E004614F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6BD9E8B22823A0E004614F2 /* Build configuration list for PBXNativeTarget "RealtimeCaptioningUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6BD9E8C22823A0E004614F2 /* Debug */,
+				F6BD9E8D22823A0E004614F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6BD9E5522823A0E004614F2 /* Project object */;
+}
